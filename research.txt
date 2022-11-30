@@ -1,0 +1,46 @@
+
+
+
+
+
+
+Network Working Group                             30 November 2022
+TXT Kehidupan #1                                  Anton Lepari, KKI
+Obsoletes: -                                      John Doe, KKI
+                                                  John Doe, KKI
+                                                  John Doe, KKI
+
+
+                       CATATAN PENELITIAN
+Status of this Memo
+    This Paper is catatan bacaan dari berbagai literatur,
+baik itu paper, jurnal, blog, wikipedia, medium, dan situs berita.
+
+Copyright Notice
+
+   Copyright (C) The Internet Society (1999).  All Rights Reserved.
+
+Abstract
+   Penelitian adalah kegiatan pengumpulan, pengolahan, analisis, 
+dan penyajian data yang dilakukan secara sistematis dan objektif 
+untuk memecahkan suatu persoalan atau menguji suatu hipotesis
+untuk mengembangkan prinsip-prinsip umum [1].
+
+Table of Contents
+
+   1.     Introduction .......................................    2
+   2.     xxx ............................................    3
+   3.     xxx ............................................    4
+   9.     xxx ............................................    8
+   10.    xxx ............................................    8
+   11.    Authors' Addresses .................................    9
+   12.    Full Copyright Statement ...........................   10
+   
+
+Lepari & Doe               Standards Track                 [Page 1]
+
+TXTK 1                   Catatan Penelitian           November 2022
+
+
+1.  Introduction 
+   
