@@ -89,4 +89,41 @@ TXTK 1                   Catatan Penelitian           November 2022
     penguatan pendataan dan fasilitasi pendanaan alternatif dari luar pemerintah, serta
     pemberian insentif fiskal untuk penelitian dan pengembangan Iptek-inovasi.
 
+16. Skor Global Cyber Security Index 0,776 (2018) 0,838
 
+Mudahnya pergerakan aktor non-negara secara transnasional mengakibatkan adanya
+dinamika ancaman nontradisional. Ancaman nontradisional yang mendapat perhatian
+besar adalah: (1) Terorisme; (2) Perdagangan manusia; (3) Penyalahgunaan narkotika;
+(4) Penangkapan ikan ilegal, tidak dilaporkan, dan tidak diatur (Illegal, Unreported and
+Unregulated fishing/IUUF); dan (5) Serangan siber.
+
+Dinamika Ancaman Siber
+Penguasaan teknologi dan akses terhadap internet yang signifikan berimplikasi pada potensi
+ancaman siber. Jumlah serangan siber berbentuk malware yang sangat tinggi ke Indonesia
+merupakan cerminan dari dinamika ancaman keamanan nasional yang terus meningkat.
+Ancaman tersebut semakin serius karena regulasi, infrastruktur, dan SDM.
+
+Menjaga Stabilitas Keamanan Nasional
+5. Penguatan Keamanan dan Ketahanan Siber diwujudkan dengan:
+(1) Pembangunan dan penguatan Tim Cepat Tanggap Keamanan Siber;
+(2) Penguatan infrastruktur, SDM, dan regulasi keamanan siber;
+(3) Penyelesaian kejahatan siber; dan
+(4) Pencegahan kejahatan siber dan peningkatan kerja sama internasional bidang siber.
+
+Negara wajib hadir dalam melayani dan melindungi segenap bangsa, serta menegakkan kedaulatan negara.
+Melalui:
+3) Perbaikan sistem peradilan, penataan regulasi dan tata kelola keamanan siber;
+
+
+Daftar Proyek Prioritas Strategis (Major Project) RPJMN 2020-2024
+No = 40 
+
+Major Project = Penguatan NSOC - SOC dan Pembentukan 121 CSIRT
+
+Manfaat Proyek
+• Menurunnya insiden serangan siber;
+• Meningkatnya integrasi dan sharing data informasi antar stakeholder terkait (baik pemerintah, swasta, dan komunitas siber lainnya).
+
+Indikasi Pendanaan (Rp Triliun) = 8,0 (APBN)
+
+Pelaksana = a.l BSSN, Polri, Kemenhan/TNI, BIN
