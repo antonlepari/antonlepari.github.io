@@ -92,17 +92,20 @@ TXTK 1                   Catatan Penelitian           November 2022
 
 2.1.2 Skor Global Cyber Security Index 0,776 (2018) 0,838
 
-    Mudahnya pergerakan aktor non-negara secara transnasional mengakibatkan adanya
-    dinamika ancaman nontradisional. Ancaman nontradisional yang mendapat perhatian
-    besar adalah: (1) Terorisme; (2) Perdagangan manusia; (3) Penyalahgunaan narkotika;
-    (4) Penangkapan ikan ilegal, tidak dilaporkan, dan tidak diatur (Illegal, Unreported and
-    Unregulated fishing/IUUF); dan (5) Serangan siber.
+    Mudahnya pergerakan aktor non-negara secara transnasional 
+    mengakibatkan adanya dinamika ancaman nontradisional. Ancaman 
+    nontradisional yang mendapat perhatian besar adalah: (1) 
+    Terorisme; (2) Perdagangan manusia; (3) Penyalahgunaan narkotika;
+    (4) Penangkapan ikan ilegal, tidak dilaporkan, dan tidak diatur 
+    (Illegal, Unreported and Unregulated fishing/IUUF); dan 
+    (5) Serangan siber.
 
     Dinamika Ancaman Siber
-    Penguasaan teknologi dan akses terhadap internet yang signifikan berimplikasi pada potensi
-    ancaman siber. Jumlah serangan siber berbentuk malware yang sangat tinggi ke Indonesia
-    merupakan cerminan dari dinamika ancaman keamanan nasional yang terus meningkat.
-    Ancaman tersebut semakin serius karena regulasi, infrastruktur, dan SDM.
+    Penguasaan teknologi dan akses terhadap internet yang signifikan 
+    berimplikasi pada potensi ancaman siber. Jumlah serangan siber 
+    berbentuk malware yang sangat tinggi ke Indonesia merupakan cerminan 
+    dari dinamika ancaman keamanan nasional yang terus meningkat. Ancaman 
+    tersebut semakin serius karena regulasi, infrastruktur, dan SDM.
 
     Menjaga Stabilitas Keamanan Nasional
     5. Penguatan Keamanan dan Ketahanan Siber diwujudkan dengan:
@@ -121,13 +124,36 @@ TXTK 1                   Catatan Penelitian           November 2022
     • Major Project = Penguatan NSOC - SOC dan Pembentukan 121 CSIRT
     • Manfaat Proyek
       • Menurunnya insiden serangan siber;
-      • Meningkatnya integrasi dan sharing data informasi antar stakeholder terkait (baik pemerintah, swasta, dan komunitas siber lainnya).
+      • Meningkatnya integrasi dan sharing data informasi antar 
+      stakeholder terkait (baik pemerintah, swasta, dan komunitas siber 
+      lainnya).
     • Indikasi Pendanaan (Rp Triliun) = 8,0 (APBN)
     • Pelaksana = a.l BSSN, Polri, Kemenhan/TNI, BIN
-    Ada 41. Catatan: Deskripsi lengkap Proyek Prioritas Strategis (Major Project) dapat dilihat pada lampiran 2.
+    Ada 41. Catatan: Deskripsi lengkap Proyek Prioritas Strategis 
+    (Major Project) dapat dilihat pada lampiran 2.
 
 2.2 Catatan Tipis tentang Pembukaan
     ranah siber (cyber space),
     kedaulatan siber (cyber sovereignty),
     ketahanan siber (cyber resilience),
     keamanan siber (cyber security).
+
+2.3 Global Cybersecurity Index - ITU
+    The Global Cybersecurity Index (GCI) is a trusted reference that 
+    measures the commitment of countries to cybersecurity at a global 
+    level – to raise awareness of the importance and different 
+    dimensions of the issue. As cybersecurity has a broad field of 
+    application, cutting across many industries and various sectors, 
+    each country’s level of development or engagement is assessed along 
+    five pillars – (i) Legal Measures, (ii) Technical Measures, (iii) 
+    Organizational Measures, (iv) Capacity Development, and 
+    (v) Cooperation – and then aggregated into an overall score.
+
+    Based on a multi‐stakeholder approach and initiative, the GCI 
+    leverages the capacity and expertise of different organizations 
+    (see key partners below), with the objectives of improving the 
+    quality of the survey, fostering international cooperation, and 
+    promoting knowledge exchange on this topic. The ITU Global 
+    Cybersecurity Agenda (GCA) provides the general foundation 
+    and framework for the initiative.​
+
