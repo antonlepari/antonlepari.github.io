@@ -157,3 +157,21 @@ TXTK 1                   Catatan Penelitian           November 2022
     Cybersecurity Agenda (GCA) provides the general foundation 
     and framework for the initiative.​
 
+    Lima Pilar GCA Global Cybersecurity Agenda:
+    • legal,
+    • technical,
+    • organizational,
+    • capacity building, dan
+    • cooperatuin.
+
+    GCI 2020 WEIGHTAGE PROCESS AND PARTNERS
+    The GCI expert group meeting held 15 October was attended by 
+    76 experts coming from Member States, ITU-D Sector members, private 
+    sectors and academia. The event was for informational purposes only 
+    to guide experts on how to distribute/recommend weightage to the GCI 
+    indicators, sub-indicators and micro-indicators. 
+    • https://www.itu.int/en/ITU-D/Cybersecurity/PublishingImages/Global-Cybersecurity-Index/Header-img/GCIv4wp01.jpg
+
+
+
+.c
