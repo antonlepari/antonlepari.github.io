@@ -174,6 +174,12 @@ TXTK 1                   Catatan Penelitian           November 2022
     indicators, sub-indicators and micro-indicators. 
     • https://www.itu.int/en/ITU-D/Cybersecurity/PublishingImages/Global-Cybersecurity-Index/Header-img/GCIv4wp01.jpg
 
-
+    VERSION
+    Third iteration
+    • 2018 Global Cybersecurity Index (v3). Download Report GCI v3 (2018).
+    Second iteration
+    • 2017 Global Cybersecurity Index (v2). Background & resources and Download Report GCI v2 (2017).
+    First iteration
+    • 2014 Global Cybersecurity Index (v1). Background & resources and Download Report GCI v1 (2014). 
 
 .c
