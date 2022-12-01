@@ -43,4 +43,50 @@ TXTK 1                   Catatan Penelitian           November 2022
 
 
 1.  Introduction 
-   
+    Sed malesuada nunc quis pretium laoreet. Aliquam id mi leo. 
+    Integer lobortis metus in velit rutrum hendrerit. Suspendisse 
+    sed mauris a nisi dictum maximus in tincidunt ante. Aliquam id 
+    pellentesque magna. Nullam pretium ligula diam, feugiat euismod 
+    purus molestie vitae. Aenean in egestas arcu. Maecenas semper 
+    mi quis augue dignissim pharetra. Nullam consequat, ante sit 
+    amet mollis lacinia, elit enim tincidunt turpis, sit amet 
+    sollicitudin augue nisl sit amet sapien. In eu sodales turpis. 
+    Etiam vitae mauris id ipsum venenatis commodo id in purus. Fusce 
+    elementum sapien eget odio semper, sit amet facilisis leo laoreet.
+
+2.  Isi
+2.1 Perpres Nomor 18 Tahun 2020 RPJMN
+  
+    7.3) Peningkatan kapabilitas Iptek dan penciptaan inovasi mencakup: a) Pemanfaatan
+    Iptek dan inovasi di bidang-bidang fokus Rencana Induk Riset Nasional 2017-2045
+    untuk pembangunan yang berkelanjutan yang mencakup integrasi pelaksanaan riset
+    dengan skema flagship Prioritas Riset Nasional untuk menghasilkan produk riset
+    dan produk inovasi strategis, diantaranya adalah pembangkit listrik tenaga nuklir
+    skala industri, bahan bakar alternatif dari kelapa sawit, kendaraan listrik termasuk
+    baterai lithium ion dan sistem fast charging, kereta cepat, pesawat amphibi, pesawat
+    terbang tanpa awak, bahan baku obat, dan pabrik garam industri, pemetaan
+    potensi sumber daya alam dan sumber daya budaya wilayah dengan pendekatan
+    multidisiplin, inovasi teknologi produksi untuk pemanfaatan sumber daya alam
+    yang berkelanjutan (teknologi tepat guna bidang pertanian dan perikanan, serta
+    riset dan inovasi sosial yang berkontribusi bagi pengembangan ilmu pengetahuan
+    dan kebijakan publik), penerapan teknologi untuk pencegahan bencana dan mitigasi
+    pascabencana, pengembangan budaya riset ilmiah dan inovasi, dan penguasaan
+    Teknologi Garda Depan untuk bidang-bidang strategis seperti kesehatan dan
+    farmasi, teknologi digital dan cyber security, material maju, energi baru terbarukan,
+    tenaga nuklir, pertahanan dan keamanan, serta keantariksaan; b) Pengembangan
+    Research Power-House yang mencakup peningkatan kuantitas dan kapabilitas SDM
+    Iptek, pengembangan dan penguatan infrastruktur litbang strategis, penguatan
+    Pusat Unggulan Iptek, pengelolaan data kekayaan hayati dan kekayaan intelektual,
+    serta pengembangan jaringan kerja sama riset dalam dan luar negeri; c) Penciptaan
+    ekosistem inovasi yang mencakup penguatan kerja sama triple-helix, perbaikan
+    tata kelola paten/KI, penguatan Science Techno Park (STP) utama, perintisan fungsi
+    Technology Commercialization Office dalam kerangka Manajemen Inovasi di perguruan
+    tinggi, perintisan Technology Transfer Office di STP atau LPNK Iptek, dan pembinaan
+    Perusahaan Pemula Berbasis Teknologi (PPBT); serta d) Peningkatan kualitas belanja
+    litbang melalui koordinasi Badan Riset dan Inovasi Nasional (BRIN) yang ditunjang
+    oleh peningkatan belanja litbang dari hasil pengembangan Dana Abadi Penelitian
+    Pengembangan, Pengkajian, dan Penerapan untuk menghasilkan Invensi dan Inovasi,
+    penguatan pendataan dan fasilitasi pendanaan alternatif dari luar pemerintah, serta
+    pemberian insentif fiskal untuk penelitian dan pengembangan Iptek-inovasi.
+
+
