@@ -51,86 +51,88 @@ TXTK 1                   Catatan Penelitian           November 2022
     mi quis augue dignissim pharetra. Nullam consequat, ante sit 
     amet mollis lacinia, elit enim tincidunt turpis, sit amet 
     sollicitudin augue nisl sit amet sapien. In eu sodales turpis. 
-    Etiam vitae mauris id ipsum venenatis commodo id in purus. Fusce 
-    elementum sapien eget odio semper, sit amet facilisis leo laoreet.
+    Etiam vitae mauris id ipsum venenatis commodo id in purus. 
+    Fusce elementum sapien eget odio semper, sit amet facilisis 
+    leo laoreet.
 
 2.  Isi
 2.1 Perpres Nomor 18 Tahun 2020 RPJMN
-2.1.1 Arah Kebijakan dan Strategi > Meningkatkan produktivitas dan daya saing
+2.1.1 Arah Kebijakan dan Strategi > Meningkatkan produktivitas dan 
+      daya saing
   
-    7.3) Peningkatan kapabilitas Iptek dan penciptaan inovasi mencakup: a) Pemanfaatan
-    Iptek dan inovasi di bidang-bidang fokus Rencana Induk Riset Nasional 2017-2045
-    untuk pembangunan yang berkelanjutan yang mencakup integrasi pelaksanaan riset
-    dengan skema flagship Prioritas Riset Nasional untuk menghasilkan produk riset
-    dan produk inovasi strategis, diantaranya adalah pembangkit listrik tenaga nuklir
-    skala industri, bahan bakar alternatif dari kelapa sawit, kendaraan listrik termasuk
-    baterai lithium ion dan sistem fast charging, kereta cepat, pesawat amphibi, pesawat
-    terbang tanpa awak, bahan baku obat, dan pabrik garam industri, pemetaan
-    potensi sumber daya alam dan sumber daya budaya wilayah dengan pendekatan
-    multidisiplin, inovasi teknologi produksi untuk pemanfaatan sumber daya alam
-    yang berkelanjutan (teknologi tepat guna bidang pertanian dan perikanan, serta
-    riset dan inovasi sosial yang berkontribusi bagi pengembangan ilmu pengetahuan
-    dan kebijakan publik), penerapan teknologi untuk pencegahan bencana dan mitigasi
-    pascabencana, pengembangan budaya riset ilmiah dan inovasi, dan penguasaan
-    Teknologi Garda Depan untuk bidang-bidang strategis seperti kesehatan dan
-    farmasi, teknologi digital dan cyber security, material maju, energi baru terbarukan,
-    tenaga nuklir, pertahanan dan keamanan, serta keantariksaan; b) Pengembangan
-    Research Power-House yang mencakup peningkatan kuantitas dan kapabilitas SDM
-    Iptek, pengembangan dan penguatan infrastruktur litbang strategis, penguatan
-    Pusat Unggulan Iptek, pengelolaan data kekayaan hayati dan kekayaan intelektual,
-    serta pengembangan jaringan kerja sama riset dalam dan luar negeri; c) Penciptaan
-    ekosistem inovasi yang mencakup penguatan kerja sama triple-helix, perbaikan
-    tata kelola paten/KI, penguatan Science Techno Park (STP) utama, perintisan fungsi
-    Technology Commercialization Office dalam kerangka Manajemen Inovasi di perguruan
-    tinggi, perintisan Technology Transfer Office di STP atau LPNK Iptek, dan pembinaan
-    Perusahaan Pemula Berbasis Teknologi (PPBT); serta d) Peningkatan kualitas belanja
-    litbang melalui koordinasi Badan Riset dan Inovasi Nasional (BRIN) yang ditunjang
-    oleh peningkatan belanja litbang dari hasil pengembangan Dana Abadi Penelitian
-    Pengembangan, Pengkajian, dan Penerapan untuk menghasilkan Invensi dan Inovasi,
-    penguatan pendataan dan fasilitasi pendanaan alternatif dari luar pemerintah, serta
-    pemberian insentif fiskal untuk penelitian dan pengembangan Iptek-inovasi.
+      7.3) Peningkatan kapabilitas Iptek dan penciptaan inovasi 
+      mencakup: a) Pemanfaatan Iptek dan inovasi di bidang-bidang 
+      fokus Rencana Induk Riset Nasional 2017-2045 untuk pembangunan 
+      yang berkelanjutan yang mencakup integrasi pelaksanaan riset
+      dengan skema flagship Prioritas Riset Nasional untuk menghasilkan produk riset
+      dan produk inovasi strategis, diantaranya adalah pembangkit listrik tenaga nuklir
+      skala industri, bahan bakar alternatif dari kelapa sawit, kendaraan listrik termasuk
+      baterai lithium ion dan sistem fast charging, kereta cepat, pesawat amphibi, pesawat
+      terbang tanpa awak, bahan baku obat, dan pabrik garam industri, pemetaan
+      potensi sumber daya alam dan sumber daya budaya wilayah dengan pendekatan
+      multidisiplin, inovasi teknologi produksi untuk pemanfaatan sumber daya alam
+      yang berkelanjutan (teknologi tepat guna bidang pertanian dan perikanan, serta
+      riset dan inovasi sosial yang berkontribusi bagi pengembangan ilmu pengetahuan
+      dan kebijakan publik), penerapan teknologi untuk pencegahan bencana dan mitigasi
+      pascabencana, pengembangan budaya riset ilmiah dan inovasi, dan penguasaan
+      Teknologi Garda Depan untuk bidang-bidang strategis seperti kesehatan dan
+      farmasi, teknologi digital dan cyber security, material maju, energi baru terbarukan,
+      tenaga nuklir, pertahanan dan keamanan, serta keantariksaan; b) Pengembangan
+      Research Power-House yang mencakup peningkatan kuantitas dan kapabilitas SDM
+      Iptek, pengembangan dan penguatan infrastruktur litbang strategis, penguatan
+      Pusat Unggulan Iptek, pengelolaan data kekayaan hayati dan kekayaan intelektual,
+      serta pengembangan jaringan kerja sama riset dalam dan luar negeri; c) Penciptaan
+      ekosistem inovasi yang mencakup penguatan kerja sama triple-helix, perbaikan
+      tata kelola paten/KI, penguatan Science Techno Park (STP) utama, perintisan fungsi
+      Technology Commercialization Office dalam kerangka Manajemen Inovasi di perguruan
+      tinggi, perintisan Technology Transfer Office di STP atau LPNK Iptek, dan pembinaan
+      Perusahaan Pemula Berbasis Teknologi (PPBT); serta d) Peningkatan kualitas belanja
+      litbang melalui koordinasi Badan Riset dan Inovasi Nasional (BRIN) yang ditunjang
+      oleh peningkatan belanja litbang dari hasil pengembangan Dana Abadi Penelitian
+      Pengembangan, Pengkajian, dan Penerapan untuk menghasilkan Invensi dan Inovasi,
+      penguatan pendataan dan fasilitasi pendanaan alternatif dari luar pemerintah, serta
+      pemberian insentif fiskal untuk penelitian dan pengembangan Iptek-inovasi.
 
 2.1.2 Skor Global Cyber Security Index 0,776 (2018) 0,838
 
-    Mudahnya pergerakan aktor non-negara secara transnasional 
-    mengakibatkan adanya dinamika ancaman nontradisional. Ancaman 
-    nontradisional yang mendapat perhatian besar adalah: (1) 
-    Terorisme; (2) Perdagangan manusia; (3) Penyalahgunaan narkotika;
-    (4) Penangkapan ikan ilegal, tidak dilaporkan, dan tidak diatur 
-    (Illegal, Unreported and Unregulated fishing/IUUF); dan 
-    (5) Serangan siber.
+      Mudahnya pergerakan aktor non-negara secara transnasional 
+      mengakibatkan adanya dinamika ancaman nontradisional. Ancaman 
+      nontradisional yang mendapat perhatian besar adalah: (1) 
+      Terorisme; (2) Perdagangan manusia; (3) Penyalahgunaan narkotika;
+      (4) Penangkapan ikan ilegal, tidak dilaporkan, dan tidak diatur 
+      (Illegal, Unreported and Unregulated fishing/IUUF); dan 
+      (5) Serangan siber.
 
-    Dinamika Ancaman Siber
-    Penguasaan teknologi dan akses terhadap internet yang signifikan 
-    berimplikasi pada potensi ancaman siber. Jumlah serangan siber 
-    berbentuk malware yang sangat tinggi ke Indonesia merupakan cerminan 
-    dari dinamika ancaman keamanan nasional yang terus meningkat. Ancaman 
-    tersebut semakin serius karena regulasi, infrastruktur, dan SDM.
+      Dinamika Ancaman Siber
+      Penguasaan teknologi dan akses terhadap internet yang signifikan 
+      berimplikasi pada potensi ancaman siber. Jumlah serangan siber 
+      berbentuk malware yang sangat tinggi ke Indonesia merupakan cerminan 
+      dari dinamika ancaman keamanan nasional yang terus meningkat. Ancaman 
+      tersebut semakin serius karena regulasi, infrastruktur, dan SDM.
 
-    Menjaga Stabilitas Keamanan Nasional
-    5. Penguatan Keamanan dan Ketahanan Siber diwujudkan dengan:
-    (1) Pembangunan dan penguatan Tim Cepat Tanggap Keamanan Siber;
-    (2) Penguatan infrastruktur, SDM, dan regulasi keamanan siber;
-    (3) Penyelesaian kejahatan siber; dan
-    (4) Pencegahan kejahatan siber dan peningkatan kerja sama internasional bidang siber.
+      Menjaga Stabilitas Keamanan Nasional
+      5. Penguatan Keamanan dan Ketahanan Siber diwujudkan dengan:
+      (1) Pembangunan dan penguatan Tim Cepat Tanggap Keamanan Siber;
+      (2) Penguatan infrastruktur, SDM, dan regulasi keamanan siber;
+      (3) Penyelesaian kejahatan siber; dan
+      (4) Pencegahan kejahatan siber dan peningkatan kerja sama internasional bidang siber.
 
-    Negara wajib hadir dalam melayani dan melindungi segenap bangsa, serta menegakkan kedaulatan negara.
-    Melalui:
-    3) Perbaikan sistem peradilan, penataan regulasi dan tata kelola keamanan siber;
-
+      Negara wajib hadir dalam melayani dan melindungi segenap bangsa, serta menegakkan kedaulatan negara.
+      Melalui:
+      3) Perbaikan sistem peradilan, penataan regulasi dan tata kelola keamanan siber;
 
 2.1.3 Daftar Proyek Prioritas Strategis (Major Project) RPJMN 2020-2024
-    • No = 40 
-    • Major Project = Penguatan NSOC - SOC dan Pembentukan 121 CSIRT
-    • Manfaat Proyek
-      • Menurunnya insiden serangan siber;
-      • Meningkatnya integrasi dan sharing data informasi antar 
-      stakeholder terkait (baik pemerintah, swasta, dan komunitas siber 
-      lainnya).
-    • Indikasi Pendanaan (Rp Triliun) = 8,0 (APBN)
-    • Pelaksana = a.l BSSN, Polri, Kemenhan/TNI, BIN
-    Ada 41. Catatan: Deskripsi lengkap Proyek Prioritas Strategis 
-    (Major Project) dapat dilihat pada lampiran 2.
+      • No = 40 
+      • Major Project = Penguatan NSOC - SOC dan Pembentukan 121 CSIRT
+      • Manfaat Proyek
+        • Menurunnya insiden serangan siber;
+        • Meningkatnya integrasi dan sharing data informasi antar 
+        stakeholder terkait (baik pemerintah, swasta, dan komunitas siber 
+        lainnya).
+      • Indikasi Pendanaan (Rp Triliun) = 8,0 (APBN)
+      • Pelaksana = a.l BSSN, Polri, Kemenhan/TNI, BIN
+      Ada 41. Catatan: Deskripsi lengkap Proyek Prioritas Strategis 
+      (Major Project) dapat dilihat pada lampiran 2.
 
 2.2 Catatan Tipis tentang Pembukaan
     ranah siber (cyber space),
