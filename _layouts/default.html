@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | strip_newlines | truncate: 160 }}">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  {% feed_meta %}
+
+  <!-- Tailwind CSS (dark mode berbasis class + plugin typography untuk artikel) -->
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' };
+    (function () {
+      var s = localStorage.getItem('theme');
+      if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+      }
+    })();
+    function toggleDarkMode() {
+      var d = document.documentElement.classList.toggle('dark');
+      localStorage.setItem('theme', d ? 'dark' : 'light');
+    }
+  </script>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-[#0088FF] to-[#00BBFF] text-white">
+    <div class="max-w-5xl mx-auto px-6 py-5 flex flex-wrap items-center justify-between gap-3">
+      <a href="/blog/" class="text-xl font-bold">{{ site.title }}</a>
+      <nav class="flex items-center gap-5 text-sm font-semibold">
+        <a href="/" class="hover:underline">Portfolio</a>
+        <a href="/blog/" class="hover:underline">Blog</a>
+        <a href="/research.html" class="hover:underline">Research</a>
+        <a href="/feed.xml" class="hover:underline">RSS</a>
+        <button onclick="toggleDarkMode()" class="px-3 py-1 bg-white/20 rounded-full">🌓 Dark Mode</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-3xl mx-auto py-12 px-6">
+    {{ content }}
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 text-center py-6">
+    <p>© {{ site.time | date: "%Y" }} Anton Lepari · Built with ❤️ using TailwindCSS · Hosted on GitHub Pages</p>
+  </footer>
+
+</body>
+</html>
