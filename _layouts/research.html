@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<article class="bg-white dark:bg-gray-800 rounded-xl shadow p-6 md:p-10">
+  <p class="text-xs uppercase tracking-wide text-[#0088FF] font-semibold">Catatan Riset</p>
+  <h1 class="text-3xl font-bold text-[#0088FF] leading-tight mt-1">{{ page.title }}</h1>
+  <p class="text-sm text-gray-500 dark:text-gray-400 mt-2">
+    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %b %Y" }}</time>
+    {% if page.source %}· Sumber: {{ page.source }}{% endif %}
+    {% for t in page.tags %}
+      <span class="ml-2 text-xs bg-gray-100 dark:bg-gray-700 rounded-full px-2 py-0.5">{{ t }}</span>
+    {% endfor %}
+  </p>
+  <div class="prose dark:prose-invert max-w-none mt-8 prose-a:text-[#0088FF]">
+    {{ content }}
+  </div>
+</article>
+<p class="mt-8"><a href="/research.html" class="text-[#0088FF] font-semibold hover:underline">&larr; Semua catatan riset</a></p>
