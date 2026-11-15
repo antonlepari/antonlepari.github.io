@@ -1,252 +1,279 @@
 ---
-title: "ASM yang tidak ASMR"
-date: 2026-11-16 00:52:00 +0700
-tags: [bahasa, rakitan, assembly]
+title: "ASM yang tidak ASMR!"
+date: 2026-11-16 00:10:00 +0700
+permalink: /blog/bahasa-rakitan/
+tags: [assembly, low-level, reverse-engineering]
 ---
 
-💻 Mengenal Bahasa Rakitan (Assembly Language)
-Memahami Bahasa Pemrograman yang Berkomunikasi Langsung dengan Prosesor
+Python, Java, dan C++ terasa seperti memberi perintah lewat penerjemah. Bahasa rakitan (*assembly*) berbeda: ia hampir berbicara langsung dengan CPU, satu instruksi demi satu instruksi. Artikel ini membahas apa itu assembly, cara kerjanya, dan contoh program pertamamu.
 
-!Assembly Language !Level
+> ⚡ **Ringkasan cepat**
+> - Assembly adalah bahasa **tingkat rendah** yang instruksinya hampir 1:1 dengan perintah CPU.
+> - Ditulis dengan **mnemonic** (`MOV`, `ADD`, `JMP`), lalu diterjemahkan oleh **assembler**.
+> - Terikat pada **arsitektur** prosesor (x86-64, ARM, RISC-V, dan lainnya).
+> - Sulit ditulis, tetapi sangat berguna untuk **memahami komputer**, **reverse engineering**, dan **analisis keamanan**.
 
-📚 1. Apa Itu Bahasa Rakitan?
+---
 
-Bahasa Rakitan (Assembly Language) adalah bahasa pemrograman tingkat rendah (low-level programming language) yang digunakan untuk memberikan instruksi secara langsung kepada prosesor atau CPU.
+## 📚 1. Apa Itu Bahasa Rakitan?
 
-Bahasa rakitan menggunakan kode-kode singkat yang disebut mnemonic, seperti:
+**Bahasa rakitan (*assembly language*)** adalah bahasa pemrograman tingkat rendah yang dipakai untuk memberi instruksi langsung kepada prosesor (CPU). Alih-alih angka biner yang panjang, instruksinya ditulis dengan kode singkat bernama **mnemonic**:
 
-MOV — Memindahkan data.
-ADD — Menjumlahkan data.
-SUB — Mengurangi data.
-MUL — Mengalikan data.
-JMP — Melakukan lompatan instruksi.
-Berbeda dengan bahasa pemrograman tingkat tinggi seperti Python, Java, dan C++, bahasa rakitan memiliki hubungan yang sangat dekat dengan arsitektur perangkat keras komputer.
+| Mnemonic | Fungsi |
+|----------|--------|
+| `MOV` | Memindahkan data |
+| `ADD` | Menjumlahkan data |
+| `SUB` | Mengurangi data |
+| `MUL` | Mengalikan data |
+| `JMP` | Melompat ke instruksi lain |
 
-🕰️ 2. Sejarah Singkat Bahasa Rakitan
+Berbeda dengan Python, Java, atau C++, assembly punya hubungan yang sangat dekat dengan **arsitektur perangkat keras** komputer.
 
-Bahasa rakitan berkembang pada era awal komputer ketika pemrograman masih dilakukan menggunakan bahasa mesin berupa deretan angka biner.
+---
 
-Bahasa rakitan diciptakan untuk mempermudah programmer dalam menulis instruksi komputer tanpa harus menghafalkan kode biner yang panjang.
+## 🕰️ 2. Sejarah Singkat
 
-Perkembangannya berkaitan erat dengan perkembangan prosesor dan arsitektur komputer, seperti:
+Pada masa awal komputer, pemrograman dilakukan dengan **bahasa mesin**, yaitu deretan angka biner. Bahasa rakitan diciptakan agar programmer tidak perlu menghafal kode biner yang panjang.
 
-Intel x86
-x86-64 (AMD64)
-ARM
-MIPS
-RISC-V
-Setiap arsitektur memiliki kumpulan instruksi atau Instruction Set Architecture (ISA) yang berbeda.
+Perkembangannya berkaitan erat dengan arsitektur prosesor:
 
-⚙️ 3. Bagaimana Cara Kerja Bahasa Rakitan?
+- **Intel x86**
+- **x86-64 (AMD64)**
+- **ARM**
+- **MIPS**
+- **RISC-V**
 
-Bahasa rakitan bekerja dengan menerjemahkan instruksi mnemonic menjadi bahasa mesin yang dapat dipahami CPU.
+> 📌 Setiap arsitektur punya kumpulan instruksi sendiri yang disebut **Instruction Set Architecture (ISA)**. Karena itu, kode assembly x86 tidak bisa langsung dijalankan di ARM.
 
-Prosesnya secara sederhana:
+---
 
-Programmer menulis kode Assembly.
-Kode diterjemahkan menggunakan program bernama Assembler.
-Assembler menghasilkan kode mesin atau objek.
-Program dapat dihubungkan dengan pustaka menggunakan linker.
-CPU menjalankan instruksi mesin tersebut.
-Alur kerja
+## ⚙️ 3. Bagaimana Cara Kerjanya?
 
+Assembly menerjemahkan instruksi mnemonic menjadi bahasa mesin yang dipahami CPU. Prosesnya:
 
-text
-+----------------------+
-| Programmer           |
-| Menulis kode Assembly|
-+----------------------+
-           |
-           v
-+----------------------+
-| Assembler            |
-| Menerjemahkan kode   |
-+----------------------+
-           |
-           v
-+----------------------+
-| Machine Code         |
-| Bahasa mesin         |
-+----------------------+
-           |
-           v
-+----------------------+
-| CPU                  |
-| Menjalankan instruksi|
-+----------------------+
-🧠 4. Komponen Penting dalam Bahasa Rakitan
+1. Programmer menulis kode assembly.
+2. **Assembler** menerjemahkannya menjadi kode objek (*machine code*).
+3. **Linker** menghubungkan kode objek dengan pustaka dan membuat program yang bisa dijalankan.
+4. **CPU** mengeksekusi instruksi mesin tersebut.
 
-A. Register
+```text
+┌────────────────────────┐
+│ Programmer             │
+│ menulis kode Assembly  │
+└───────────┬────────────┘
+            ▼
+┌────────────────────────┐
+│ Assembler              │
+│ menerjemahkan kode     │
+└───────────┬────────────┘
+            ▼
+┌────────────────────────┐
+│ Machine Code           │
+│ bahasa mesin           │
+└───────────┬────────────┘
+            ▼
+┌────────────────────────┐
+│ CPU                    │
+│ menjalankan instruksi  │
+└────────────────────────┘
+```
 
-Register merupakan tempat penyimpanan data berukuran kecil yang berada di dalam CPU dan dapat diakses dengan sangat cepat.
+---
 
-Contoh register pada arsitektur x86-64:
+## 🧠 4. Komponen Penting
 
+### A. Register
 
-Register	Fungsi
-RAX	Register umum, sering digunakan untuk hasil operasi
-RBX	Register umum
-RCX	Register umum, sering digunakan sebagai penghitung
-RDX	Register umum
-RSI	Source Index
-RDI	Destination Index
-RSP	Stack Pointer
-RBP	Base Pointer
-B. Mnemonic
+**Register** adalah penyimpanan kecil di dalam CPU yang diakses sangat cepat. Contoh pada x86-64:
 
-Mnemonic adalah singkatan yang mewakili instruksi tertentu.
+| Register | Fungsi |
+|----------|--------|
+| `RAX` | Register umum, sering untuk hasil operasi |
+| `RBX` | Register umum |
+| `RCX` | Register umum, sering sebagai penghitung |
+| `RDX` | Register umum |
+| `RSI` | *Source Index* |
+| `RDI` | *Destination Index* |
+| `RSP` | *Stack Pointer* |
+| `RBP` | *Base Pointer* |
 
+### B. Mnemonic
 
-Instruksi	Fungsi
-MOV	Memindahkan data
-ADD	Penjumlahan
-SUB	Pengurangan
-INC	Menambah nilai satu
-DEC	Mengurangi nilai satu
-CMP	Membandingkan data
-JMP	Melompat ke instruksi lain
-CALL	Memanggil prosedur
-RET	Kembali dari prosedur
-C. Operand
+**Mnemonic** adalah singkatan yang mewakili satu instruksi.
 
-Operand merupakan nilai atau lokasi data yang digunakan oleh instruksi.
+| Instruksi | Fungsi |
+|-----------|--------|
+| `MOV` | Memindahkan data |
+| `ADD` | Penjumlahan |
+| `SUB` | Pengurangan |
+| `INC` | Menambah nilai satu |
+| `DEC` | Mengurangi nilai satu |
+| `CMP` | Membandingkan data |
+| `JMP` | Melompat ke instruksi lain |
+| `CALL` | Memanggil prosedur |
+| `RET` | Kembali dari prosedur |
 
-Contoh:
+### C. Operand
 
+**Operand** adalah nilai atau lokasi data yang dipakai instruksi. Contoh:
 
-asm
+```nasm
 MOV AX, 10
-Keterangan:
+```
 
-MOV adalah mnemonic.
-AX adalah operand tujuan.
-10 adalah operand sumber.
-💡 5. Contoh Program Bahasa Rakitan
+- `MOV` adalah **mnemonic**.
+- `AX` adalah operand **tujuan**.
+- `10` adalah operand **sumber**.
 
-Contoh berikut menggunakan sintaks NASM untuk arsitektur x86-64 pada Linux.
+> 💡 Pada sintaks Intel (yang dipakai NASM), tujuan ditulis **lebih dulu**, lalu sumber. Sintaks AT&T membalik urutannya.
 
-A. Program Penjumlahan
+---
 
-Program berikut menjumlahkan angka 5 dan 3.
+## 💡 5. Contoh Program
 
+Contoh berikut memakai sintaks **NASM** untuk **x86-64 di Linux**.
 
-asm
+### A. Penjumlahan
+
+Menjumlahkan 5 dan 3, lalu mengembalikan hasilnya sebagai *exit code* program.
+
+```nasm
 section .text
 global _start
 
 _start:
-    mov rax, 5
-    mov rbx, 3
-    add rax, rbx
+    mov rax, 5        ; rax = 5
+    mov rbx, 3        ; rbx = 3
+    add rax, rbx      ; rax = rax + rbx  -> 8
 
-    mov rax, 60
-    xor rdi, rdi
-    syscall
+    mov rdi, rax      ; exit code = hasil penjumlahan
+    mov rax, 60       ; nomor syscall exit
+    syscall           ; keluar dari program
+```
+
 Penjelasan:
 
-mov rax, 5 memasukkan angka 5 ke register RAX.
-mov rbx, 3 memasukkan angka 3 ke register RBX.
-add rax, rbx menjumlahkan kedua nilai.
-Hasil perhitungan tersimpan di RAX sebelum register tersebut digunakan untuk memanggil sistem keluar.
-syscall menjalankan layanan sistem operasi.
-Hasil perhitungan: 5 + 3 = 8.
+- `mov rax, 5` memasukkan angka 5 ke `RAX`.
+- `mov rbx, 3` memasukkan angka 3 ke `RBX`.
+- `add rax, rbx` menjumlahkan keduanya, hasilnya (8) tersimpan di `RAX`.
+- `mov rdi, rax` menyalin hasil ke `RDI`, tempat *exit code* dibaca.
+- `mov rax, 60` dan `syscall` meminta sistem operasi mengakhiri program.
 
-B. Program Perulangan Sederhana
+**Cara menjalankan:**
 
+```bash
+nasm -f elf64 jumlah.asm -o jumlah.o
+ld jumlah.o -o jumlah
+./jumlah
+echo $?        # hasilnya: 8
+```
 
-asm
+### B. Perulangan Sederhana
+
+```nasm
 section .text
 global _start
 
 _start:
-    mov rcx, 5
+    mov rcx, 5        ; penghitung = 5
 
 ulang:
-    dec rcx
-    jnz ulang
+    dec rcx           ; rcx = rcx - 1
+    jnz ulang         ; ulangi selama rcx belum nol
 
     mov rax, 60
-    xor rdi, rdi
+    xor rdi, rdi      ; exit code 0
     syscall
+```
+
 Penjelasan:
 
-mov rcx, 5 mengisi register RCX dengan angka 5.
-dec rcx mengurangi nilai RCX sebanyak satu.
-jnz ulang mengulangi proses selama hasil pengurangan tidak nol.
-Program berhenti setelah nilai RCX mencapai nol.
-🚀 6. Kelebihan Bahasa Rakitan
+- `mov rcx, 5` mengisi penghitung dengan 5.
+- `dec rcx` mengurangi nilainya satu per satu.
+- `jnz ulang` melompat kembali ke label `ulang` selama hasilnya **belum nol** (*jump if not zero*).
+- Setelah `RCX` mencapai nol, program lanjut ke bagian keluar.
 
-Berikut beberapa kelebihan bahasa rakitan:
+---
 
-Performa tinggi — Programmer dapat mengatur instruksi CPU secara lebih langsung.
-Kontrol perangkat keras — Memungkinkan pengelolaan register dan instruksi prosesor.
-Ukuran program efisien — Dapat menghasilkan kode mesin yang ringkas.
-Memahami cara kerja komputer — Membantu mempelajari arsitektur CPU dan memori.
-Optimasi khusus — Berguna untuk mengoptimalkan bagian program tertentu.
-⚠️ 7. Kekurangan Bahasa Rakitan
+## 🚀 6. Kelebihan
 
-Meskipun memiliki banyak kelebihan, bahasa rakitan juga mempunyai beberapa kekurangan:
+- **Performa tinggi:** instruksi CPU diatur secara langsung.
+- **Kontrol perangkat keras:** register dan instruksi prosesor dikelola sendiri.
+- **Ukuran efisien:** kode mesin yang dihasilkan bisa sangat ringkas.
+- **Memahami komputer:** cara terbaik mempelajari arsitektur CPU dan memori.
+- **Optimasi khusus:** berguna untuk mempercepat bagian program tertentu.
 
-Sulit dipelajari — Membutuhkan pemahaman tentang arsitektur komputer.
-Penulisan kode rumit — Program sederhana pun dapat membutuhkan banyak instruksi.
-Ketergantungan arsitektur — Kode untuk x86 belum tentu dapat berjalan pada ARM.
-Pemeliharaan sulit — Kode yang panjang lebih sulit dibaca dan diperbaiki.
-Pengembangan lebih lambat — Programmer harus mengatur banyak hal secara manual.
-🔍 8. Perbedaan Bahasa Rakitan dan Bahasa Tingkat Tinggi
+## ⚠️ 7. Kekurangan
 
+- **Sulit dipelajari:** butuh pemahaman arsitektur komputer.
+- **Kode rumit:** program sederhana pun bisa panjang.
+- **Bergantung arsitektur:** kode x86 belum tentu jalan di ARM.
+- **Sulit dipelihara:** kode panjang lebih sulit dibaca dan diperbaiki.
+- **Pengembangan lambat:** banyak hal harus diatur manual.
 
-Aspek	Bahasa Rakitan	Bahasa Tingkat Tinggi
-Tingkatan	Rendah	Tinggi
-Sintaks	Dekat dengan instruksi CPU	Lebih mudah dipahami manusia
-Portabilitas	Bergantung arsitektur	Umumnya lebih tinggi
-Pengelolaan memori	Lebih manual	Sering dibantu runtime
-Contoh	NASM, MASM	Python, Java, C++
-Pengembangan	Relatif sulit	Relatif mudah
-🖥️ 9. Penerapan Bahasa Rakitan dalam Kehidupan Nyata
+---
 
-Bahasa rakitan masih digunakan dalam berbagai bidang teknologi, antara lain:
+## 🔍 8. Assembly vs Bahasa Tingkat Tinggi
 
-Sistem operasi: Bagian tertentu dari kernel dan proses booting.
-Embedded Systems: Perangkat elektronik dengan sumber daya terbatas.
-Firmware: Program tingkat rendah yang mengendalikan perangkat keras.
-Keamanan komputer: Analisis kode mesin dan reverse engineering.
-Optimasi performa: Mempercepat bagian tertentu dari sebuah program.
-Pengembangan perangkat keras: Pengujian dan pengendalian prosesor.
-📝 10. Istilah Penting yang Harus Diketahui
+| Aspek | Bahasa Rakitan | Bahasa Tingkat Tinggi |
+|-------|----------------|-----------------------|
+| Tingkatan | Rendah | Tinggi |
+| Sintaks | Dekat dengan instruksi CPU | Lebih mudah dipahami manusia |
+| Portabilitas | Bergantung arsitektur | Umumnya lebih tinggi |
+| Pengelolaan memori | Lebih manual | Sering dibantu *runtime* |
+| Contoh | NASM, MASM | Python, Java, C++ |
+| Pengembangan | Relatif sulit | Relatif mudah |
 
+---
 
-Istilah	Pengertian
-CPU	Central Processing Unit, pusat pemrosesan komputer
-ALU	Arithmetic Logic Unit, bagian CPU untuk operasi aritmetika dan logika
-Register	Penyimpanan kecil di dalam CPU
-Opcode	Bagian instruksi yang menentukan operasi
-Operand	Data atau lokasi data yang digunakan instruksi
-Assembler	Program penerjemah bahasa rakitan
-Machine Code	Instruksi dalam bentuk kode mesin
-Memory	Tempat penyimpanan data dan instruksi
-ISA	Instruction Set Architecture, rancangan kumpulan instruksi prosesor
-🎯 11. Kesimpulan
+## 🖥️ 9. Di Mana Assembly Dipakai?
 
-Bahasa rakitan merupakan bahasa pemrograman tingkat rendah yang memiliki peran penting dalam dunia komputer. Bahasa ini memungkinkan programmer berinteraksi lebih dekat dengan perangkat keras melalui instruksi-instruksi yang dipahami oleh prosesor.
+- **Sistem operasi:** bagian tertentu kernel dan proses *booting*.
+- **Embedded systems:** perangkat dengan sumber daya terbatas.
+- **Firmware:** program tingkat rendah yang mengendalikan perangkat keras.
+- **Keamanan komputer:** analisis kode mesin dan *reverse engineering*.
+- **Optimasi performa:** mempercepat bagian tertentu program.
+- **Pengembangan perangkat keras:** pengujian dan pengendalian prosesor.
 
-Walaupun lebih sulit dipelajari dibandingkan bahasa pemrograman tingkat tinggi, bahasa rakitan tetap relevan dalam pengembangan sistem operasi, firmware, embedded systems, optimasi program, dan analisis keamanan komputer.
+> 🔐 **Bagi dunia keamanan siber**, membaca assembly adalah keterampilan dasar untuk *malware analysis*, *reverse engineering*, dan memahami kerentanan memori seperti *buffer overflow*.
 
-Mempelajari bahasa rakitan berarti memahami bagaimana komputer bekerja dari tingkat instruksi paling dasar.
+---
 
-📖 12. Referensi Belajar
+## 📝 10. Istilah Penting
 
-Berikut beberapa sumber yang dapat digunakan untuk memperdalam pemahaman:
+| Istilah | Pengertian |
+|---------|------------|
+| **CPU** | *Central Processing Unit*, pusat pemrosesan komputer |
+| **ALU** | *Arithmetic Logic Unit*, bagian CPU untuk operasi aritmetika dan logika |
+| **Register** | Penyimpanan kecil di dalam CPU |
+| **Opcode** | Bagian instruksi yang menentukan operasi |
+| **Operand** | Data atau lokasi data yang dipakai instruksi |
+| **Assembler** | Program penerjemah bahasa rakitan |
+| **Machine Code** | Instruksi dalam bentuk kode mesin |
+| **Memory** | Tempat penyimpanan data dan instruksi |
+| **ISA** | *Instruction Set Architecture*, rancangan kumpulan instruksi prosesor |
 
-NASM Documentation — Dokumentasi assembler NASM.
-Intel Software Developer Manuals — Dokumentasi arsitektur dan instruksi Intel.
-AMD64 Architecture Programmer's Manual — Dokumentasi arsitektur AMD64.
-RISC-V Documentation — Spesifikasi arsitektur RISC-V.
-<div align="center">
+---
 
-💻 "Understand the Machine, Master the Code."
+## 🎯 11. Kesimpulan
 
-Belajar bahasa rakitan adalah langkah awal memahami komputer lebih dalam.
+Bahasa rakitan adalah bahasa tingkat rendah yang memungkinkan programmer berinteraksi dekat dengan perangkat keras lewat instruksi yang dipahami prosesor. Lebih sulit dipelajari dibanding bahasa tingkat tinggi, tetapi tetap relevan untuk sistem operasi, firmware, *embedded systems*, optimasi program, dan analisis keamanan.
 
-Dokumen Pembelajaran Bahasa Rakitan
+Mempelajari assembly berarti memahami bagaimana komputer bekerja dari tingkat instruksi paling dasar.
+
+---
+
+## 📖 12. Referensi Belajar
+
+- [NASM Documentation](https://www.nasm.us/docs.php): dokumentasi assembler NASM.
+- [Intel Software Developer Manuals](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html): dokumentasi arsitektur dan instruksi Intel.
+- **AMD64 Architecture Programmer's Manual**: dokumentasi arsitektur AMD64 (cari di situs AMD).
+- [RISC-V Specifications](https://riscv.org/technical/specifications/): spesifikasi arsitektur RISC-V.
+
+<div style="text-align:center; margin-top:2rem">
+
+**💻 "Understand the Machine, Master the Code."**
+
+*Belajar bahasa rakitan adalah langkah awal memahami komputer lebih dalam.*
 
 </div>
