@@ -1,9 +1,25 @@
-<title>research.</title>
-<h1>Berisikan bacaan paper, jurnal, web, medium, wikipedia, atau apapun itu tentang kaminfo dan kamsiber</h1>
+---
+layout: default
+title: Research
+---
+<h1 class="text-3xl font-bold text-[#0088FF] mb-3">Catatan Riset</h1>
+<p class="mb-8">Bacaan paper, jurnal, regulasi, web, Medium, Wikipedia, atau apa pun tentang keamanan informasi dan keamanan siber.</p>
 
-Dear diary, <br>
-30 November 2022.<br><br>
+<div class="space-y-6">
+{% assign notes = site.research | sort: "date" | reverse %}
+{% for n in notes %}
+  <a href="{{ n.url }}" class="block bg-white dark:bg-gray-800 rounded-xl shadow p-6 hover:shadow-lg transition">
+    <h2 class="font-bold text-lg">{{ n.title }}</h2>
+    <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">
+      {{ n.date | date: "%d %b %Y" }}{% if n.source %} · {{ n.source }}{% endif %}
+    </p>
+    <p class="text-sm mt-3">{{ n.summary }}</p>
+  </a>
+{% else %}
+  <p>Belum ada catatan.</p>
+{% endfor %}
+</div>
 
-Disclaimer.<br>
-Ini tidak dilanjutkan. Silakan beralih ke:<br>
-<a href="/research.txt">/research.txt</a><br>
+<p class="mt-10 text-sm text-gray-500 dark:text-gray-400">
+  Arsip catatan format teks (gaya RFC, 2022): <a href="/research.txt" class="text-[#0088FF] hover:underline">/research.txt</a>
+</p>
