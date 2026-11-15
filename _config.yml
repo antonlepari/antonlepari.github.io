@@ -1,8 +1,9 @@
-title: Anton Lepari Blog
+title: Lepari Blog
 description: Catatan dan artikel keamanan siber
 lang: id
 # Ganti ke https://blog.mesra.id setelah Enforce HTTPS aktif
 url: "http://blog.mesra.id"
+timezone: Asia/Jakarta
 baseurl: ""
 permalink: /blog/:title/
 plugins:
